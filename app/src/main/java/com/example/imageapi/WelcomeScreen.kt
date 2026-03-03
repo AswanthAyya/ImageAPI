@@ -20,7 +20,7 @@ fun WelcomeScreen(onContinueClick: () -> Unit) {
     ) {
 
         Text(
-            text = "Welcome 🎬",
+            text = "Welcome to MovieWapp 🎬",
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold
         )
