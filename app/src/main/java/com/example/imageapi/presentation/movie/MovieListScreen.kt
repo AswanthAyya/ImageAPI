@@ -1,4 +1,4 @@
-package com.example.imageapi
+package com.example.imageapi.presentation.movie
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.*
@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.example.imageapi.domain.model.Movie
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 
@@ -53,7 +54,10 @@ fun MovieListScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
 
-                items(viewModel.filteredMovies) { movie ->
+                items(
+                    items = viewModel.filteredMovies,
+                    key = { it.id }
+                ) { movie ->
 
                     MovieCard(movie) {
 

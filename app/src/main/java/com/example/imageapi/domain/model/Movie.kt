@@ -1,4 +1,4 @@
-package com.example.imageapi
+package com.example.imageapi.domain.model
 
 import kotlinx.serialization.Serializable
 

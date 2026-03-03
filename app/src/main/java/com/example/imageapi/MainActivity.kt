@@ -6,6 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
+import com.example.imageapi.presentation.detail.DetailScreen
+import com.example.imageapi.presentation.movie.MovieListScreen
+import com.example.imageapi.presentation.welcome.WelcomeScreen
 
 class MainActivity : ComponentActivity() {
 

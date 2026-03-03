@@ -1,4 +1,4 @@
-package com.example.imageapi
+package com.example.imageapi.presentation.detail
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
